@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eventBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#eventBg)"/>
+  <text x="200" y="80" font-size="60" fill="#ffffff" text-anchor="middle" font-weight="bold">🎉</text>
+  <text x="200" y="160" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">Club Event</text>
+  <text x="200" y="220" font-size="16" fill="#ffffff" text-anchor="middle">Join us for an amazing experience</text>
+</svg>

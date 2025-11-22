@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38ef7d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#grad6)"/>
+  <text x="200" y="80" font-size="60" fill="#ffffff" text-anchor="middle" font-weight="bold">🌱</text>
+  <text x="200" y="180" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">Environmental Club</text>
+  <text x="200" y="220" font-size="16" fill="#ffffff" text-anchor="middle">Sustainability & Green</text>
+</svg>

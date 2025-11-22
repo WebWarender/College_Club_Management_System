@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Club Images</title>
+</head>
+<body>
+    <h1>Club Management System - Image Generator</h1>
+    <p>This page generates placeholder images for the club management system.</p>
+    
+    <canvas id="canvas1" width="400" height="300"></canvas>
+    <canvas id="canvas2" width="400" height="300"></canvas>
+    <canvas id="canvas3" width="400" height="300"></canvas>
+    <canvas id="canvas4" width="400" height="300"></canvas>
+    <canvas id="canvas5" width="400" height="300"></canvas>
+    <canvas id="canvas6" width="400" height="300"></canvas>
+
+    <script>
+        // Function to draw gradient background
+        function drawGradientBg(ctx, colors) {
+            const gradient = ctx.createLinearGradient(0, 0, 400, 300);
+            gradient.addColorStop(0, colors[0]);
+            gradient.addColorStop(1, colors[1]);
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 300);
+        }
+
+        // Function to draw icon/text
+        function drawIcon(ctx, icon, color, x, y, size) {
+            ctx.font = `bold ${size}px Arial`;
+            ctx.fillStyle = color;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(icon, x, y);
+        }
+
+        // Tech Club
+        const canvas1 = document.getElementById('canvas1');
+        const ctx1 = canvas1.getContext('2d');
+        drawGradientBg(ctx1, ['#667eea', '#764ba2']);
+        drawIcon(ctx1, '💻', '#ffffff', 200, 100, 80);
+        ctx1.font = 'bold 24px Arial';
+        ctx1.fillStyle = '#ffffff';
+        ctx1.textAlign = 'center';
+        ctx1.fillText('Tech Club', 200, 200);
+        ctx1.font = '14px Arial';
+        ctx1.fillText('Programming & Innovation', 200, 240);
+
+        // Sports Club
+        const canvas2 = document.getElementById('canvas2');
+        const ctx2 = canvas2.getContext('2d');
+        drawGradientBg(ctx2, ['#f093fb', '#f5576c']);
+        drawIcon(ctx2, '⚽', '#ffffff', 200, 100, 80);
+        ctx2.font = 'bold 24px Arial';
+        ctx2.fillStyle = '#ffffff';
+        ctx2.textAlign = 'center';
+        ctx2.fillText('Sports Club', 200, 200);
+        ctx2.font = '14px Arial';
+        ctx2.fillText('Fitness & Competition', 200, 240);
+
+        // Cultural Club
+        const canvas3 = document.getElementById('canvas3');
+        const ctx3 = canvas3.getContext('2d');
+        drawGradientBg(ctx3, ['#4facfe', '#00f2fe']);
+        drawIcon(ctx3, '🎭', '#ffffff', 200, 100, 80);
+        ctx3.font = 'bold 24px Arial';
+        ctx3.fillStyle = '#ffffff';
+        ctx3.textAlign = 'center';
+        ctx3.fillText('Cultural Club', 200, 200);
+        ctx3.font = '14px Arial';
+        ctx3.fillText('Arts & Expression', 200, 240);
+
+        // Debate Club
+        const canvas4 = document.getElementById('canvas4');
+        const ctx4 = canvas4.getContext('2d');
+        drawGradientBg(ctx4, ['#fa709a', '#fee140']);
+        drawIcon(ctx4, '🎤', '#ffffff', 200, 100, 80);
+        ctx4.font = 'bold 24px Arial';
+        ctx4.fillStyle = '#ffffff';
+        ctx4.textAlign = 'center';
+        ctx4.fillText('Debate Club', 200, 200);
+        ctx4.font = '14px Arial';
+        ctx4.fillText('Speaking & Leadership', 200, 240);
+
+        // Photography Club
+        const canvas5 = document.getElementById('canvas5');
+        const ctx5 = canvas5.getContext('2d');
+        drawGradientBg(ctx5, ['#a8edea', '#fed6e3']);
+        drawIcon(ctx5, '📷', '#ffffff', 200, 100, 80);
+        ctx5.font = 'bold 24px Arial';
+        ctx5.fillStyle = '#333333';
+        ctx5.textAlign = 'center';
+        ctx5.fillText('Photography', 200, 200);
+        ctx5.font = '14px Arial';
+        ctx5.fillText('Visual Storytelling', 200, 240);
+
+        // Environmental Club
+        const canvas6 = document.getElementById('canvas6');
+        const ctx6 = canvas6.getContext('2d');
+        drawGradientBg(ctx6, ['#11998e', '#38ef7d']);
+        drawIcon(ctx6, '🌱', '#ffffff', 200, 100, 80);
+        ctx6.font = 'bold 24px Arial';
+        ctx6.fillStyle = '#ffffff';
+        ctx6.textAlign = 'center';
+        ctx6.fillText('Eco Club', 200, 200);
+        ctx6.font = '14px Arial';
+        ctx6.fillText('Sustainability & Green', 200, 240);
+
+        // Download images
+        setTimeout(() => {
+            console.log('Images generated! Right-click each canvas to save as image.');
+            alert('Images generated! You can see them below. Right-click to save them.');
+        }, 100);
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        canvas {
+            margin: 10px;
+            border: 2px solid #ddd;
+            cursor: pointer;
+            display: inline-block;
+        }
+    </style>
+</body>
+</html>
